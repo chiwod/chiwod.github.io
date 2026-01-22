@@ -1,1 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Your Name — Video Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Your Name</h1>
+    <p class="summary">
+      Camera operator and videographer working across documentary, corporate, and narrative production.
+    </p>
+
+    <button id="theme-toggle">Toggle light / dark</button>
+  </header>
+
+  <!-- REEL -->
+  <section id="reel">
+    <h2>Reel</h2>
+
+    <div class="video-wrapper">
+      <!-- Vimeo or YouTube embed -->
+      <iframe
+        src="https://player.vimeo.com/video/XXXXXXXX"
+        frameborder="0"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </section>
+
+  <!-- RECENT PROJECTS -->
+  <section id="recent">
+    <h2>Ongoing / Recent Projects</h2>
+
+    <ul class="project-list">
+      <li>
+        <button class="project-link"
+                data-title="Project Title"
+                data-year="2024"
+                data-role="Camera Operator"
+                data-video="https://player.vimeo.com/video/YYYYYYYY"
+                data-description="Short factual description of the project.">
+          Project Title — Camera Operator — 2024
+        </button>
+      </li>
+    </ul>
+  </section>
+
+  <!-- PAST WORK -->
+  <section id="past">
+    <h2>Past Work</h2>
+
+    <ul class="project-list">
+      <li>
+        <button class="project-link"
+                data-title="Older Project"
+                data-year="2021"
+                data-role="Videographer"
+                data-video="https://www.youtube.com/embed/ZZZZZZZ"
+                data-description="What the project was and your role.">
+          Older Project — Videographer — 2021
+        </button>
+      </li>
+    </ul>
+  </section>
+
+  <!-- CREDITS / CONTACT -->
+  <section id="contact">
+    <h2>Credits / Contact</h2>
+
+    <p>Email: yourname@email.com</p>
+    <p>Vimeo: vimeo.com/yourname</p>
+    <p>LinkedIn: linkedin.com/in/yourname</p>
+  </section>
+
+  <!-- MODAL -->
+  <div id="modal" class="hidden">
+    <div class="modal-content">
+      <button id="close-modal">Close</button>
+
+      <h3 id="modal-title"></h3>
+      <p id="modal-meta"></p>
+
+      <div class="video-wrapper">
+        <iframe id="modal-video" src="" frameborder="0" allowfullscreen></iframe>
+      </div>
+
+      <p id="modal-description"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
 
