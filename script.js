@@ -24,3 +24,23 @@ document.getElementById("close-modal").addEventListener("click", () => {
 document.getElementById("theme-toggle").addEventListener("click", () => {
   document.body.classList.toggle("light");
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const modal = document.getElementById("modal");
+  const modalVideo = document.getElementById("modal-video");
+  const closeBtn = document.getElementById("close-modal");
+
+  closeBtn.addEventListener("click", () => {
+    modal.classList.add("hidden");
+    modalVideo.src = "";
+  });
+
+  // Example trigger for testing:
+  const testBtn = document.createElement("button");
+  testBtn.textContent = "Open Modal";
+  testBtn.addEventListener("click", () => {
+    modal.classList.remove("hidden");
+    modalVideo.src = "https://player.vimeo.com/video/XXXXXXXX"; // Replace with your video
+  });
+  document.body.appendChild(testBtn);
+});
