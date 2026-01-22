@@ -15,7 +15,7 @@
 body {
   background: var(--bg);
   color: var(--text);
-  font-family: system-ui, sans-serif;
+  font-family: system-ui, mona-sans;
   margin: 0;
   padding: 2rem;
 }
